@@ -1,0 +1,73 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+:root {
+  --backgroudColorBody: #a5a5d8;
+  --backgroudColorCalc: #dadada;
+  --backgroudColorHover: #aaa6a69c;
+  --backgroudColorButton-dif: #8896b1;
+}
+
+body {
+  background-color: var(--backgroudColorBody);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calc {
+  padding: 0.4em;
+  width: 280px;
+
+  background-color: var(--backgroudColorCalc);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+h3 {
+  font-size: 0.6em;
+  font-weight: 300;
+}
+.operation {
+  text-align: end;
+}
+.numberFromAbove,
+.lowNumber {
+  padding: 2px;
+  overflow-wrap: break-word;
+}
+.numberFromAbove {
+  font-size: 0.8em;
+  min-height: 1.5em;
+}
+.lowNumber {
+  font-size: 1.2em;
+  min-height: 1.6em;
+}
+button {
+  border: none;
+}
+button:hover {
+  background-color: var(--backgroudColorHover);
+  cursor: pointer;
+}
+.buttons-number {
+  gap: 0.3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.buttons-number button {
+  height: 50px;
+}
+.number {
+  background-color: #fff;
+}
+.button-dif {
+  grid-column: span 2;
+  background-color: var(--backgroudColorButton-dif);
+}
